@@ -63,6 +63,9 @@ body {
 
 .tareas .lista li {
 	border-bottom: 1px solid #B6B6B6;
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
 }
 
 .tareas .lista li a {
@@ -72,6 +75,9 @@ body {
 	text-decoration: none;
 }
 
-.tareas .lista li a:hover {
-	text-decoration: line-through;
+.delete {
+	margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
 }

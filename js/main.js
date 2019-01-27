@@ -9,7 +9,8 @@
       var tarea = tareaInput.value,
         nuevaTarea =  document.createElement("li"),
         enlance = document.createElement("a"),
-        contenido = document.createTextNode(tarea);
+        contenido = document.createTextNode(tarea),
+        icono = document.createElement("i");
 
       if (tarea === "") {
         tareaInput.setAttribute("placeholder", "Agrega un tarea valida");
@@ -22,6 +23,11 @@
 
       // Le establecemos un atributo href
       enlance.setAttribute("href", "#");
+
+      icono.setAttribute("class", "fas fa-trash delete");
+
+      //
+      enlance.appendChild(icono);
 
       //Agregar el enlace a la nueva tarea
       nuevaTarea.appendChild(enlance);
